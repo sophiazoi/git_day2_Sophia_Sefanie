@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1920, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <div><h1>Registration Form</h1></div>
+    <div>
+      <form action="destination_page.php">
+        <label for="firstname">Firstname:</label>
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          placeholder="First Name"
+        /><br />
+        <br />
+        <label for="lastname">Lastname:</label>
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          placeholder="Last Name"
+        /><br />
+        <p>
+          <label for="course">Course:</label>
+          <select id="course" name="course">
+            <option value="html">HTML</option>
+            <option value="pt">Python</option>
+            <option value="js">JavaScript</option>
+          </select>
+        </p>
+        <p>
+          Gender:<br />
+          <input type="radio" name="gender" value="female" checked />
+          Female<br />
+          <input type="radio" name="gender" value="male" /> Male<br />
+          <input type="radio" name="gender" value="other" /> Other<br />
+        </p>
+        <p>
+          Hobbies:<br />
+          <input type="checkbox" id="programming" name="programming" checked />
+          <label for="programming">Programming</label><br />
+          <input type="checkbox" id="basketiball" name="basketball" />
+          <label for="basketball">Basketball</label><br />
+          <input type="checkbox" id="football" name="football" />
+          <label for="football">Football</label><br />
+          <input type="checkbox" id="reading novel" name="reading novel" />
+          <label for="reading novel">Reading Novel</label>
+        </p>
+        <p>
+          Phone:<br />
+          <input
+            type="tel"
+            id="phone"
+            placeholder="004312345678912"
+            name="phone"
+            pattern="[0-9]{4}-[0-9]{11}"
+            required
+          />
+        </p>
+        <p>
+          <label for="message">Adress:</label><br />
+          <textarea
+            id="message"
+            placeholder="Schützenstraße 30, 6323, Vienna, Austria"
+            name="message"
+            rows="5"
+            cols="30"
+          ></textarea>
+        </p>
+        <p>
+          <label for="email">E-Mail:</label><br />
+          <input
+            type="email"
+            id="email"
+            placeholder="johndoe@example.com"
+            pattern=".+@example\.com"
+            size="30"
+            required
+          />
+        </p>
+        <p>
+          <label for="password">Password:</label><br />
+          <input
+            type="password"
+            id="pass"
+            placeholder="1password."
+            name="password"
+            minlength="8"
+            required
+          />
+        </p>
+        <p><input type="submit" /><input type="reset" /></p>
+      </form>
+    </div>
+  </body>
+</html>
